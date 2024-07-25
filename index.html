@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">At</div>
+        <div class="navOptions">
+          <a class="navLinks" href="#home">Home</a>
+          <a class="navLinks" href="#about-me">About Me</a>
+          <a class="navLinks" href="#projects">Projects</a>
+          <a class="navLinks" href="#skills">Skills</a>
+          <a class="navLinks" href="#contact-me">Contact Me</a>
+        </div>
+        <button class="menuButton" onclick="toggleSidebar()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-content">
+        <button class="closeButton" onclick="toggleSidebar()">
+          <i class="fas fa-times fa-xl"></i>
+        </button>
+        <a class="navLinks" href="#home">Home</a>
+        <a class="navLinks" href="#about-me">About Me</a>
+        <a class="navLinks" href="#projects">Projects</a>
+        <a class="navLinks" href="#skills">Skills</a>
+        <a class="navLinks" href="#contact-me">Contact Me</a>
+      </div>
+    </aside>
+    <main>
+      <section id="home">
+        <div class="content">
+          <div class="left">
+            <h1>Adarsh Tiwari</h1>
+            <h2>FrontEnd Developer</h2>
+            <p>
+              I specialize in crafting engaging and user-friendly web
+              application interfaces, prioritizing seamless experiences and
+              innovative design solutions to elevate user interactions and
+              satisfaction.
+            </p>
+            <div class="socialLinks">
+              <a href="https://github.com" target="_blank"
+                ><i class="fab fa-github fa-lg"></i
+              ></a>
+              <a href="https://linkedin.com" target="_blank"
+                ><i class="fab fa-linkedin fa-lg"></i
+              ></a>
+              <a href="https://instagram.com" target="_blank"
+                ><i class="fab fa-instagram fa-lg"></i
+              ></a>
+              <a href="https://facebook.com" target="_blank"
+                ><i class="fab fa-facebook fa-lg"></i
+              ></a>
+            </div>
+          </div>
+          <div class="right">
+            <img class="myImage" src="./images/file.webp" alt="Adarsh Tiwari" />
+          </div>
+        </div>
+      </section>
+      <section id="about-me">
+        <h1>About Me</h1>
+        <p>
+          Hello! I am Adarsh Tiwari, a passionate web developer with a
+          background in computer applications. I hold a Bachelor of Computer
+          Applications (BCA) from Deen Dayal Upadhyaya Gorakhpur University.
+        </p>
+        <br />
+        <p>
+          My journey in web development began during my college days, where I
+          worked on various projects that sparked my interest in creating
+          dynamic and user-friendly websites. Notable among these are a pizza
+          ordering website and a news article platform, both of which allowed me
+          to refine my development skills and gain practical experience.
+        </p>
+        <br />
+        <p>
+          I am driven by a love for problem-solving and a desire to build
+          efficient, aesthetically pleasing web solutions. I find joy in the
+          process of turning ideas into reality through code, and I am always
+          eager to learn and adapt to new technologies.
+        </p>
+        <br />
+        <p>
+          Looking ahead, I aim to continue growing as a full-stack developer,
+          taking on challenging projects that push the boundaries of my
+          knowledge. My ultimate goal is to leverage my skills to contribute to
+          innovative tech solutions that make a meaningful impact.
+        </p>
+      </section>
+      <section id="projects">
+        <h1>My Projects</h1>
+        <div class="projectCardCollection">
+          <div class="projectWidget">
+            <iframe src="https://the-indian-times.vercel.app/"></iframe>
+            <div class="projectOverlay">
+              <h2>News Article</h2>
+              <p>Project was about precision and information</p>
+            </div>
+          </div>
+          <div class="projectWidget">
+            <iframe src="https://pizza-website-sooty.vercel.app/"></iframe>
+            <div class="projectOverlay">
+              <h2>Pizza</h2>
+              <p>Project was about precision and information</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="skills">
+        <h1>My Skills</h1>
+        <div class="skillsCollection">
+          <div class="skillCard">
+            <img src="./images//html.png" alt="html" />
+            <p>HTML</p>
+          </div>
+          <div class="skillCard">
+            <img src="./images/css.png" alt="css" />
+            <p>CSS</p>
+          </div>
+          <div class="skillCard">
+            <img src="./images/github.png" alt="github" />
+            <p>GITHUB</p>
+          </div>
+          <div class="skillCard">
+            <img src="./images/js.svg" alt="js" />
+            <p>JS</p>
+          </div>
+          <div class="skillCard">
+            <img src="./images/react.png" alt="react" />
+            <p>REACT</p>
+          </div>
+          <div class="skillCard">
+            <img src="./images//tailwind.png" alt="" />
+            <p>Tailwind</p>
+          </div>
+        </div>
+      </section>
+      <section id="contact-me">
+        <div class="contact-form">
+          <span class="heading">Contact Us</span>
+          <form>
+            <input type="text" placeholder="Full name" required />
+            <input
+              type="email"
+              placeholder="Email"
+              id="email"
+              name="email"
+              required
+            />
+            <input type="text" placeholder="Phone no." required />
+            <textarea
+              id="message"
+              placeholder="Message"
+              name="message"
+              required
+            ></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <div class="myContactDetails">
+          <h1>Adarsh Tiwari</h1>
+          <span><a href="tel:+919555350284">+91 95553-50284</a></span>
+          <span
+            ><a href="mailto:at.wrath9616@gmail.com"
+              >at.wrath9616@gmail.com</a
+            ></span
+          >
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
